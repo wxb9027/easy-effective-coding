@@ -1,0 +1,19 @@
+参考链接： https://my.oschina.net/u/2444045/blog/2245381
+原理：
+大家都知道一个java应用项目可以打包成一个jar，当然你必须指定一个拥有main函数的main class作为你这个jar包的程序入口。
+
+具体的方法是修改jar包内目录META-INF下的MANIFEST.MF文件。
+
+比如有个叫做test.jar的jar包，里面有一个拥有main函数的main class：test.someClassName
+
+我们就只要在MANIFEST.MF里面添加如下一句话：
+
+Main-Class: test.someClassName
+
+然后我们可以在控制台里输入java -jar test.jar即可以运行这个jar。
+
+Maven可以使用mvn package指令对项目进行打包生成jar文件，如果直接使用java -jar xxx.jar指令运行jar文件，会出现”no main manifest attribute, in xxx.jar”（没有设置Main-Class）、ClassNotFoundException（找不到依赖包）等错误。
+
+方法一：使用maven-jar-plugin和maven-dependency-plugin插件打包
+
+最佳实现：
