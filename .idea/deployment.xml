@@ -6,6 +6,7 @@
         <serverdata>
           <mappings>
             <mapping deploy="/mydata/java-project" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/mydata/shellscript" local="$PROJECT_DIR$/src/main/resources/shellscript" web="" />
           </mappings>
         </serverdata>
       </paths>
