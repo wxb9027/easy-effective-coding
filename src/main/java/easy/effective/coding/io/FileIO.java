@@ -16,8 +16,8 @@ public class FileIO {
             }else {
                 LOG.error("创建目录失败："+dir);
             }
-
         }
+        LOG.info("目录已经存在："+dir);
 
     }
 }
