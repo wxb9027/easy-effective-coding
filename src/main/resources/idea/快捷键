@@ -1,0 +1,14 @@
+查找接口的实现类：
+IDEA 风格 ctrl + alt +B
+
+查看类或接口的继承关系：
+ctrl + h
+
+快速实现接口
+选中接口  按 alt enter
+
+idea修改格式化代码快捷键
+Ctrl+Alt+L
+
+移动代码
+alt+shift
