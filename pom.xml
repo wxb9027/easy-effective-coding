@@ -8,6 +8,18 @@
     <artifactId>easy-effective-coding</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <repositories>
+        <repository>
+            <id>confluent</id>
+            <name>Confluent</name>
+            <url>https://packages.confluent.io/maven/</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <avro.version>1.9.1</avro.version>
+        <confluent.version>5.0.0</confluent.version>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -54,6 +66,37 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-    </dependencies>
 
+        <!-- kafka client-->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!-- kafka avro-->
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>${avro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-avro-serializer</artifactId>
+            <version>${confluent.version}</version>
+        </dependency>
+        <!--使用 Twitter 的 Bijection 类库实现 avro 的序列化与反序列化-->
+
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>bijection-avro_2.12</artifactId>
+            <version>0.9.6</version>
+        </dependency>
+
+        <!--用来参考flume的kafka sink 如何使用avro-->
+        <dependency>
+            <groupId>org.apache.flume.flume-ng-sinks</groupId>
+            <artifactId>flume-ng-kafka-sink</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+    </dependencies>
 </project>
