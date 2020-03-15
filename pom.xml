@@ -85,7 +85,6 @@
             <version>${confluent.version}</version>
         </dependency>
         <!--使用 Twitter 的 Bijection 类库实现 avro 的序列化与反序列化-->
-
         <dependency>
             <groupId>com.twitter</groupId>
             <artifactId>bijection-avro_2.12</artifactId>
@@ -98,5 +97,20 @@
             <artifactId>flume-ng-kafka-sink</artifactId>
             <version>1.9.0</version>
         </dependency>
+
+        <!-- es spring -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-elasticsearch</artifactId>
+            <version>3.1.9.RELEASE</version>
+        </dependency>
+
+        <!-- disruptor -->
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.4.2</version>
+        </dependency>
+
     </dependencies>
 </project>
