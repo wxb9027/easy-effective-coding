@@ -16,11 +16,13 @@ public class RealData implements Callable {
     }
     @Override
     public String call() throws Exception {
+        System.out.println("开始realData啦");
          StringBuffer sb = new StringBuffer();
          for (int i = 0;i < 5;i++){
              sb.append(para);
              TimeUnit.SECONDS.sleep(1);
          }
+        System.out.println("完成realData啦");
         return sb.toString();
     }
 }

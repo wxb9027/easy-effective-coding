@@ -2,8 +2,6 @@ package easy.effective.coding.bingfa_biancheng.future.guavafuture;
 
 import com.google.common.util.concurrent.*;
 import easy.effective.coding.bingfa_biancheng.future.jdkfuture.RealData;
-
-import java.util.Timer;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
