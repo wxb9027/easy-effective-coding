@@ -19,18 +19,18 @@ public class HeapSort {
 
     public static void main(String[] args) {
         int[] array = new int[]{1,3,2,6,5,7,8,9,10,0};
-        //1、构建一个最大堆
+        //1、构建一个最大堆 O(n)
         buildHeap(array);
         System.out.println(Arrays.toString(array));
 
-        //2、循环移除堆顶元素，移到集合尾部，调整堆产生新的堆顶
+        //2、循环移除堆顶元素，移到集合尾部，调整堆产生新的堆顶 O(nlogn)
         heapSort(array);
         System.out.println(Arrays.toString(array));
 
     }
 
     /**
-     * 构建堆
+     * 构建堆 - 时间复杂度：O(n) 注意不是 O(nlogn)
      */
     public static void buildHeap(int[] array){
         //从最后一个非叶子节点开始，依次做"下沉"调整
@@ -40,7 +40,7 @@ public class HeapSort {
     }
 
     /**
-     * "下沉"调整 (构建最大堆)
+     * "下沉"调整 (构建最大堆) - 时间复杂度：O(logn)
      */
     public static void downAdjust(int[] array, int parentIndex, int length){
         //temp保存父节点值，用于最后赋值
@@ -53,7 +53,7 @@ public class HeapSort {
             }
             //如果父节点大于任何一个孩子节点的值，则直接跳出
             if(temp>=array[childIndex])
-                 break;
+                break;
             //无需真正交换，单向赋值即可
             array[parentIndex]=array[childIndex];
             parentIndex=childIndex;
