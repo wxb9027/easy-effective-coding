@@ -59,14 +59,19 @@ public class TestArrays {
         list.add("three");
         //方式一：泛型丢失，无法使用String[]来接收
         Object[] strings = list.toArray();
-        //方式二：数组容量不够
+        //方式二：数组容量不够接收集合的元素,则转化失败，每个元素为null
         String[] arrs1 = new String[2];
         list.toArray(arrs1);
         System.out.println(Arrays.asList(arrs1));
-        //方式三：数组容量刚好足够
+        //方式三：数组容量刚好足够接收集合的元素
         String[] arrs2 = new String[3];
         list.toArray(arrs2);
         System.out.println(Arrays.asList(arrs2));
+
+        //方式四：数组容量大于集合元素个数，这时候性能比方式三要低
+        String[] arrs3 = new String[10];
+        list.toArray(arrs3);
+        System.out.println(Arrays.asList(arrs3));
 
     }
 }
