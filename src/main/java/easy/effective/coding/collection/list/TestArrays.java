@@ -1,6 +1,5 @@
 package easy.effective.coding.collection.list;
 
-import org.apache.kafka.common.protocol.types.Field;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

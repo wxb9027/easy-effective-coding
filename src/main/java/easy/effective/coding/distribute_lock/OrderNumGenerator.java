@@ -1,6 +1,7 @@
 package easy.effective.coding.distribute_lock;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 //生成订单号 时间戳
 public class OrderNumGenerator {
