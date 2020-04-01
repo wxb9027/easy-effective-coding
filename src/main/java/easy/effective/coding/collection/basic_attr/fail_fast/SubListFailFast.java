@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 验证fail-fast机制----主列的  元素变个数 的变动会引起子列抛异常
+ *
+ * fail-fast机制--场景一：主列的  元素变个数 的变动会引起子列抛异常
  * masterList的任何修改都会导致sublist的 增删改查 抛出ConcurrentModificationException。
  *
  * 1.Sublish是ArrayList的内部类，不能被序列化，不能网络传输；
