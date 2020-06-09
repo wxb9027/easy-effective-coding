@@ -1,5 +1,7 @@
 package easy.effective.coding.bingfa_biancheng.future.jdkfuture;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.*;
 
 /**
@@ -17,10 +19,21 @@ import java.util.concurrent.*;
  */
 public class App {
     public static void main(String[] args) {
-        ExecutorService pool = Executors.newFixedThreadPool(1);
-        FutureTask<String> future = new FutureTask<>(new RealData("query"));
-        pool.submit(future);
+        //ExecutorService pool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors()/2);
+        ExecutorService pool = Executors.newWorkStealingPool();
+
+        List<FutureTask> futures = new ArrayList<>();
+
+        synchronized (this){
+        for (int i=0 ; i<500 ;i++){
+            FutureTask<String> future = new FutureTask<>(new RealData("query" + i));
+            pool.submit(future);
+
+            futures.add(future);
+        }
         System.out.println("请求完毕");
+
+        }
 
         try {
             System.out.println("开始其他业务。。。。");
@@ -32,10 +45,15 @@ public class App {
 
         System.out.println("获取请求结果。。。");
         try {
-            System.out.println("结果：" + future.get(30,TimeUnit.SECONDS));// get方法为阻塞的，Guava的future不是
+            for (FutureTask future : futures ){
+                // get方法为阻塞的，Guava的future不是
+                System.out.println("结果：" + future.get(30,TimeUnit.SECONDS));
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        System.out.println("main task done ...");
     }
 
 

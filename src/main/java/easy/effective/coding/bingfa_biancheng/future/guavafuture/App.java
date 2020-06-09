@@ -3,6 +3,8 @@ package easy.effective.coding.bingfa_biancheng.future.guavafuture;
 import com.google.common.util.concurrent.*;
 import easy.effective.coding.bingfa_biancheng.future.jdkfuture.RealData;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -20,10 +22,17 @@ public class App {
         // 1.使用MoreExecutors.listeningDecorator()方法将一个普通的线程池
         // 包装为一个包含通知功能的Future线程池。
         ListeningExecutorService executor = listeningDecorator(Executors.newFixedThreadPool(10));
-        ListenableFuture<String> future = executor.submit(new RealData("guava"));
 
+
+        ListenableFuture<String> future1 = executor.submit(new RealData("guava1"));
+        ListenableFuture<String> future2 = executor.submit(new RealData("guava2"));
+        List<ListenableFuture<String>> futureList = new ArrayList<>();
+        futureList.add(future1);
+        futureList.add(future2);
+
+        for(ListenableFuture future : futureList){
         // 2 这里相当于future.get(),但是这个方法不是阻塞的。
-        Futures.addCallback(future, new FutureCallback<String>() {
+         Futures.addCallback(future, new FutureCallback<String>() {
             @Override
             public void onSuccess(String s) {
                 System.out.println("异步处理成功，数据：" + s);
@@ -34,6 +43,9 @@ public class App {
                 System.out.println("异步处理失败，数据：" + e);
             }
         });
+
+        }
+        executor.awaitTermination(1,TimeUnit.SECONDS);
 
         System.out.println("main task done ...");
 

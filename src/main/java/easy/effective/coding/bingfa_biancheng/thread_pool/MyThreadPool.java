@@ -1,9 +1,6 @@
 package easy.effective.coding.bingfa_biancheng.thread_pool;
 
-import java.util.concurrent.BlockingDeque;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -13,7 +10,10 @@ import java.util.concurrent.atomic.AtomicLong;
 public class MyThreadPool {
     public static void main(String[] args) {
         // 缓存队列
+
         BlockingDeque queue = new LinkedBlockingDeque(2);
+
+        ConcurrentLinkedDeque concurrentLinkedDeque=  new ConcurrentLinkedDeque(queue);
 
         // 线程工厂
         MyThreadFactory esFactory = new MyThreadFactory("同步es");
