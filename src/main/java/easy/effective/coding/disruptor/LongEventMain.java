@@ -17,13 +17,13 @@ import java.util.concurrent.Executors;
 public class LongEventMain {
     public static void main(String[] args) throws InterruptedException {
         // Executor that will be used to construct new threads for consumers
-        Executor executor = Executors.newCachedThreadPool();
+        Executor consumerExecutor = Executors.newCachedThreadPool();
         // The factory for the event
         LongEventFactory longEventFactory = new LongEventFactory();
         // Specify the size of the ring buffer, must be power of 2
         int bufferSize = 1024;
         // Construct the Disruptor
-        Disruptor<LongEvent> disruptor = new Disruptor<LongEvent>(longEventFactory, bufferSize, executor);
+        Disruptor<LongEvent> disruptor = new Disruptor<LongEvent>(longEventFactory, bufferSize, consumerExecutor);
         // Connect the handler
         disruptor.handleEventsWith(new LongEventHandler());
         // Start the Disruptor, starts all threads running
