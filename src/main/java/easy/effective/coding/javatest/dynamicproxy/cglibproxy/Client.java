@@ -13,5 +13,7 @@ public class Client {
         HelloServiceImpl helloService = (HelloServiceImpl)enhancer.create();
         //在调用代理类中方法时 会被我们实现的方法拦截器拦截
         helloService.sayHello();
+
+        
     }
 }
