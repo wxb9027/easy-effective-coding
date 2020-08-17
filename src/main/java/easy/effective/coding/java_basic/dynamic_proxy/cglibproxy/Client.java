@@ -1,4 +1,4 @@
-package easy.effective.coding.javatest.dynamicproxy.cglibproxy;
+package easy.effective.coding.java_basic.dynamic_proxy.cglibproxy;
 
 import org.springframework.cglib.proxy.Enhancer;
 

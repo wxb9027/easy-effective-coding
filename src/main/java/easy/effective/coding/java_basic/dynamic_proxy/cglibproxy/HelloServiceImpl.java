@@ -1,6 +1,4 @@
-package easy.effective.coding.javatest.dynamicproxy.cglibproxy;
-
-import org.springframework.beans.factory.support.SimpleInstantiationStrategy;
+package easy.effective.coding.java_basic.dynamic_proxy.cglibproxy;
 
 public class HelloServiceImpl {
     public void sayHello(){

@@ -1,4 +1,4 @@
-package easy.effective.coding.javatest.dynamicproxy.jdkproxy;
+package easy.effective.coding.java_basic.dynamic_proxy.jdkproxy;
 
 public class Test {
     public static void main(String[] args) {

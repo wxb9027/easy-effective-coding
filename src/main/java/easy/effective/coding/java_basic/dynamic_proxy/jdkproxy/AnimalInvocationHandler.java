@@ -1,4 +1,4 @@
-package easy.effective.coding.javatest.dynamicproxy.jdkproxy;
+package easy.effective.coding.java_basic.dynamic_proxy.jdkproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

@@ -1,9 +1,8 @@
-package easy.effective.coding.maptest;
+package easy.effective.coding.java_basic.deep_copy;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 /**
