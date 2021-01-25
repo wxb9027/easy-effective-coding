@@ -99,6 +99,28 @@ public class BinTree {
     }
 
     /**
+     * 中序遍历（栈）
+     * 左－根 —右
+     */
+    public void inorderWithStack(BinTree root){
+        if(root==null){return;}
+        Stack<BinTree> stack = new Stack<>();
+        stack.push(root);
+        while (stack.isEmpty()==false){
+            BinTree binTree = stack.pop();
+
+            if(binTree.rChild!=null){
+                stack.push(binTree.rChild);
+            }
+            if(binTree.lChild!=null){
+                stack.push(binTree.lChild);
+            }
+            visit(binTree.getData());
+        }
+    }
+
+
+    /**
      * 层序遍历（利用队列）
      */
     public void levelOrder(BinTree root){
@@ -130,7 +152,7 @@ public class BinTree {
     }
 
     public static void main(String[] args) {
-        Object[] objs = {0,1,2,3,4,5,6,7};
+        Object[] objs = {0,1,2,3,4,5,6,};
         BinTree binTree = new BinTree();
         binTree.createTree(objs);
 
