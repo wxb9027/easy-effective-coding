@@ -1,8 +1,4 @@
-package easy.effective.coding.jvm;
-
-import sun.misc.Launcher;
-
-import java.security.SecureClassLoader;
+package easy.effective.coding.java_basic.jvm;
 
 /**
  * 当前ClassLoader是AppClassLoader

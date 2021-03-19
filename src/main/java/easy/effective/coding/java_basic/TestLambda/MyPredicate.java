@@ -1,4 +1,4 @@
-package easy.effective.coding.java8.TestLambda;
+package easy.effective.coding.java_basic.TestLambda;
 
 public interface MyPredicate<T> {
 
