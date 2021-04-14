@@ -8,10 +8,20 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class MyThreadPool {
     public static void main(String[] args) {
+
+        /*//单线程化的线程池(重要)
+        Executors.newSingleThreadExecutor();
+        //定长线程池(重要)
+        Executors.newFixedThreadPool(2);
+        //可缓存线程池
+        Executors.newCachedThreadPool();
+        //定时线程池
+        Executors.newScheduledThreadPool(2);
+        //Java8 新增，使用目前机器上可用的处理器作为它的并行级别
+        Executors.newWorkStealingPool(2);*/
+
         // 缓存队列
-
         BlockingDeque queue = new LinkedBlockingDeque(2);
-
         ConcurrentLinkedDeque concurrentLinkedDeque=  new ConcurrentLinkedDeque(queue);
 
         // 线程工厂

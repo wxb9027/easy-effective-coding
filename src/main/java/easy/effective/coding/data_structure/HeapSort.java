@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class HeapSort {
 
     public static void main(String[] args) {
-        int[] array = new int[]{1,3,2,6,5,7,8,9,10,0};
+        int[] array = new int[]{1, 3, 2, 6, 5, 7, 8, 9, 10, 0};
         //1、构建一个最大堆 O(n)
         buildHeap(array);
         System.out.println(Arrays.toString(array));
@@ -32,47 +32,66 @@ public class HeapSort {
     /**
      * 构建堆 - 时间复杂度：O(n) 注意不是 O(nlogn)
      */
-    public static void buildHeap(int[] array){
+    public static void buildHeap(int[] array) {
         //从最后一个非叶子节点开始，依次做"下沉"调整
-        for (int i = array.length/2-1;i>=0;i--){
-            downAdjust(array,i,array.length);
+        for (int i = array.length / 2 - 1; i >= 0; i--) {
+            downAdjust(array, i, array.length);
         }
     }
 
     /**
      * "下沉"调整 (构建最大堆) - 时间复杂度：O(logn)
      */
-    public static void downAdjust(int[] array, int parentIndex, int length){
+    public static void downAdjust(int[] array, int parentIndex, int length) {
         //temp保存父节点值，用于最后赋值
         int temp = array[parentIndex];
-        int childIndex = 2*parentIndex+1;
-        while (childIndex<length){
+        int childIndex = 2 * parentIndex + 1;
+        while (childIndex < length) {
             //如果有右孩子，且右孩子大于左孩子的值，则定位到右孩子
-            if(childIndex+1<length&&array[childIndex+1]>array[childIndex]){
+            if (childIndex + 1 < length && array[childIndex + 1] > array[childIndex]) {
                 childIndex++;
             }
             //如果父节点大于任何一个孩子节点的值，则直接跳出
-            if(temp>=array[childIndex])
+            if (temp >= array[childIndex])
                 break;
             //无需真正交换，单向赋值即可
-            array[parentIndex]=array[childIndex];
-            parentIndex=childIndex;
-            childIndex = 2*childIndex+1;
+            array[parentIndex] = array[childIndex];
+            parentIndex = childIndex;
+            childIndex = 2 * childIndex + 1;
         }
-        array[parentIndex]=temp;
+        array[parentIndex] = temp;
+    }
+
+    /**
+     * "下沉"调整 (构建最大堆) - 时间复杂度：O(logn)
+     */
+    public static void downAdjust1(int[] array, int parentIndex, int length) {
+        //temp保存父节点值，用于最后赋值
+        int temp = array[parentIndex];
+        int childIndex = 2 * parentIndex + 1;
+        //如果有右孩子，且右孩子大于左孩子的值，则定位到右孩子
+        if (childIndex + 1 < length && array[childIndex + 1] > array[childIndex]) {
+            childIndex++;
+        }
+        //如果父节点大于任何一个孩子节点的值，则直接跳出
+        if (temp >= array[childIndex])
+            return;
+        //无需真正交换，单向赋值即可
+        array[parentIndex] = array[childIndex];
+        array[childIndex] = temp;
     }
 
     /**
      * 堆排序（升序）
      */
-    public static void heapSort(int[] array){
-        for(int i = array.length-1;i>0;i--){
+    public static void heapSort(int[] array) {
+        for (int i = array.length - 1; i > 0; i--) {
             //最后一个元素和第一个元素交换
             int temp = array[i];
             array[i] = array[0];
             array[0] = temp;
             //下沉调整最大堆
-            downAdjust(array,0,i);
+            downAdjust(array, 0, i);
         }
     }
 

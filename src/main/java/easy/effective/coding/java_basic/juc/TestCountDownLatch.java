@@ -22,6 +22,7 @@ public class TestCountDownLatch {
         }
 
         try {
+            //主线程在此等待,直到其他线程通过countDown()减法操作至计数器归0
             latch.await();
         } catch (InterruptedException e) {
         }
@@ -42,8 +43,6 @@ class LatchDemo implements Runnable {
 
     @Override
     public void run() {
-
-
         try {
             for (int i = 0; i < 10; i++) {
                 if (i % 2 == 0) {
