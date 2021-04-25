@@ -1,4 +1,4 @@
-package easy.effective.coding.java_basic.dynamic_proxy.jdkproxy;
+package easy.effective.coding.java_basic.design_pattern.proxy_pattern.dynamic_proxy.jdkproxy;
 
 /**
  * @author fxm 20200527

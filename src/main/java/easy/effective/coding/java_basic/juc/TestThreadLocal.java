@@ -34,16 +34,16 @@ public class TestThreadLocal {
                 threadLocalString.set("thread");
                 str = "fxm";
                 //这一行打印的是初始值,而不是当前方法最新set的值.因为新起的线程与主线程是隔离的.
-                System.out.println(Thread.currentThread().getName()+":"+threadLocalString.get());
-                System.out.println(Thread.currentThread().getName()+":"+threadLocalLong.get());
-                System.out.println(Thread.currentThread().getName()+":"+str);
+                System.out.println(Thread.currentThread().getName() + ":" + threadLocalString.get());
+                System.out.println(Thread.currentThread().getName() + ":" + threadLocalLong.get());
+                System.out.println(Thread.currentThread().getName() + ":" + str);
             }
         }).start();
 
-        Thread. sleep(2000);
-        System.out.println(Thread.currentThread().getName()+":"+threadLocalString.get());
-        System.out.println(Thread.currentThread().getName()+":"+threadLocalLong.get());
-        System.out.println(Thread.currentThread().getName()+":"+str);
+        Thread.sleep(2000);
+        System.out.println(Thread.currentThread().getName() + ":" + threadLocalString.get());
+        System.out.println(Thread.currentThread().getName() + ":" + threadLocalLong.get());
+        System.out.println(Thread.currentThread().getName() + ":" + str);
 
     }
 }

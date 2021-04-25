@@ -1,4 +1,4 @@
-package easy.effective.coding.java_basic.dynamic_proxy.cglibproxy;
+package easy.effective.coding.java_basic.design_pattern.proxy_pattern.dynamic_proxy.cglibproxy;
 
 
 import org.springframework.cglib.proxy.MethodInterceptor;
