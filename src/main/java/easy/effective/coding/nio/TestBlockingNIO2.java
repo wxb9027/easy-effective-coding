@@ -46,7 +46,7 @@ public class TestBlockingNIO2 {
     public void server() throws IOException {
 
         ServerSocketChannel ssChannel = ServerSocketChannel.open();
-        FileChannel outChannel = FileChannel.open(Paths.get("2.jpg"), StandardOpenOption.WRITE, StandardOpenOption.CREATE);
+        FileChannel outChannel = FileChannel.open(Paths.get("1.jpg"), StandardOpenOption.WRITE, StandardOpenOption.CREATE);
 
         ssChannel.bind(new InetSocketAddress(9998));
 

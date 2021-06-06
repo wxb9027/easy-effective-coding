@@ -132,7 +132,7 @@ public class TestChannel {
     @Test
     public void test3() throws IOException {
         FileChannel inChannel = FileChannel.open(Paths.get("1.jpg"), StandardOpenOption.READ);
-        FileChannel outChannel = FileChannel.open(Paths.get("2.jpg"), StandardOpenOption.WRITE, StandardOpenOption.READ, StandardOpenOption.CREATE_NEW);
+        FileChannel outChannel = FileChannel.open(Paths.get("1.jpg"), StandardOpenOption.WRITE, StandardOpenOption.READ, StandardOpenOption.CREATE_NEW);
 
 //        inChannel.transferTo(0, inChannel.size(), outChannel);
         outChannel.transferFrom(inChannel, 0, inChannel.size());
@@ -145,7 +145,7 @@ public class TestChannel {
     @Test
     public void test2() throws IOException {
         FileChannel inChannel = FileChannel.open(Paths.get("1.jpg"), StandardOpenOption.READ);
-        FileChannel outChannel = FileChannel.open(Paths.get("2.jpg"), StandardOpenOption.WRITE, StandardOpenOption.READ, StandardOpenOption.CREATE_NEW);
+        FileChannel outChannel = FileChannel.open(Paths.get("1.jpg"), StandardOpenOption.WRITE, StandardOpenOption.READ, StandardOpenOption.CREATE_NEW);
 
         //内存映射文件（只有byteBuffer支持）
         MappedByteBuffer inMappedBuf = inChannel.map(FileChannel.MapMode.READ_ONLY, 0, inChannel.size());
@@ -171,7 +171,7 @@ public class TestChannel {
 
         try {
             fis = new FileInputStream("1.jpg");
-            fos = new FileOutputStream("2.jpg");
+            fos = new FileOutputStream("1.jpg");
 
             //获取通道
             inChannel = fis.getChannel();
