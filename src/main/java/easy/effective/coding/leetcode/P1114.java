@@ -5,6 +5,9 @@ import org.elasticsearch.common.util.concurrent.CountDown;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Semaphore;
 
+/**
+ * 按序打印
+ */
 class P1114 {
 
     class Foo {
