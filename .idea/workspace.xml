@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,25 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0027ddb3-7eab-49c6-a2d7-2896e60e6e2b" name="Default Changelist" comment="fxm">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/easy-effective-coding.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/collection/map/TestHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/data_structure/mianshi/stackandqueue/MiniStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/io/bio/TimeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/jvm/TestGCPrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/suanfa/divide_and_conquer/DCSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/那些年的xm/es读写.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-trainning/src/main/java/internet/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/easy/effective/coding/bingfa_biancheng/future/guavafuture/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/bingfa_biancheng/future/guavafuture/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/easy/effective/coding/bingfa_biancheng/future/jdkfuture/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/bingfa_biancheng/future/jdkfuture/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/easy/effective/coding/bingfa_biancheng/thread_pool/MyThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/bingfa_biancheng/thread_pool/MyThreadPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/easy/effective/coding/disruptor/LongEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/disruptor/LongEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/easy/effective/coding/disruptor/LongEventMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/disruptor/LongEventMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/那些年的xm/java提供的数据结构.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/那些年的xm/java提供的数据结构.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/那些年的xm/数据结构基础.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/那些年的xm/数据结构基础.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-effective-coding.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +85,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -104,7 +95,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Idea Projects/kafka-2.1.0-src/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -199,9 +190,9 @@
     <list>
       <item itemvalue="Application.TestGCPrint" />
       <item itemvalue="Application.DCSum" />
-      <item itemvalue="JUnit.TestHashMap.testKeySetOrder" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.App (1)" />
+      <item itemvalue="JUnit.TestHashMap.testKeySetOrder" />
     </list>
     <recent_temporary>
       <list>
@@ -213,6 +204,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -486,52 +478,14 @@
     <MESSAGE value="2020年3月5日22:26:31 学到线程池啦" />
     <MESSAGE value="学到二叉树啦" />
     <MESSAGE value="fail-fast" />
-    <MESSAGE value="fxm" />
     <MESSAGE value="更新树结构" />
     <MESSAGE value="更新数据结构xmind" />
     <MESSAGE value="更新ConcurrentHashMap" />
     <MESSAGE value="add xmind file" />
     <MESSAGE value="更新 jvm xmind" />
     <MESSAGE value="更新 jvm" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新 jvm" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="453" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1590834382812">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state x="453" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1280.796@0.0.1280.796" timestamp="1590834382812" />
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1591719067358">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.0.1280.796@0.0.1280.796" timestamp="1591719067358" />
-    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1591719067356">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state width="1238" height="183" key="GridCell.Tab.0.center/0.0.1280.796@0.0.1280.796" timestamp="1591719067356" />
-    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1591719067355">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state width="1238" height="183" key="GridCell.Tab.0.left/0.0.1280.796@0.0.1280.796" timestamp="1591719067355" />
-    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1591719067357">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state width="1238" height="183" key="GridCell.Tab.0.right/0.0.1280.796@0.0.1280.796" timestamp="1591719067357" />
-    <state x="149" y="39" key="SettingsEditor" timestamp="1590239327110">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state x="149" y="39" key="SettingsEditor/0.0.1280.796@0.0.1280.796" timestamp="1590239327110" />
-    <state x="431" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589282386443">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state x="431" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.796@0.0.1280.796" timestamp="1589282386443" />
-    <state x="96" y="0" width="598" height="796" key="find.popup" timestamp="1591022291550">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state x="96" y="0" width="598" height="796" key="find.popup/0.0.1280.796@0.0.1280.796" timestamp="1591022291550" />
-    <state x="296" y="195" key="git4idea.merge.GitPullDialog" timestamp="1590028795481">
-      <screen x="0" y="0" width="1280" height="796" />
-    </state>
-    <state x="296" y="195" key="git4idea.merge.GitPullDialog/0.0.1280.796@0.0.1280.796" timestamp="1590028795481" />
+    <MESSAGE value="fxm" />
+    <option name="LAST_COMMIT_MESSAGE" value="fxm" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/easy_effective_coding$ArrayListFailFast_test1.ic" NAME="ArrayListFailFast.test1 Coverage Results" MODIFIED="1585724714885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
