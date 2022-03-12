@@ -23,7 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0027ddb3-7eab-49c6-a2d7-2896e60e6e2b" name="Default Changelist" comment="fxm">
-      <change afterPath="$PROJECT_DIR$/java-trainning/src/main/java/internet/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/java_basic/jvm/MethodCallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/easy/effective/coding/nio/bufferdemo/BufferDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -115,7 +116,7 @@
       <recent name="F:\apache\easy-effective-coding\src\main\java\easy\effective\coding\cache" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App (1)">
+  <component name="RunManager" selected="JUnit.MethodCallTest">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="easy.effective.coding.bingfa_biancheng.future.jdkfuture.App" />
       <module name="easy-effective-coding" />
@@ -142,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DCSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.effective.coding.suanfa.divide_and_conquer.DCSum" />
+    <configuration name="BufferDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.effective.coding.nio.bufferdemo.BufferDemo" />
       <module name="easy-effective-coding" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.effective.coding.suanfa.divide_and_conquer.*" />
+          <option name="PATTERN" value="easy.effective.coding.nio.bufferdemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,52 +156,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGCPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="easy.effective.coding.jvm.TestGCPrint" />
+    <configuration name="MethodCallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="easy-effective-coding" />
-      <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails -XX:+PrintVMOptions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.effective.coding.jvm.*" />
+          <option name="PATTERN" value="easy.effective.coding.java_basic.jvm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="easy.effective.coding.java_basic.jvm" />
+      <option name="MAIN_CLASS_NAME" value="easy.effective.coding.java_basic.jvm.MethodCallTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHashMap.testKeySetOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MethodCallTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="easy-effective-coding" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.effective.coding.collection.map.*" />
+          <option name="PATTERN" value="easy.effective.coding.java_basic.jvm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="easy.effective.coding.collection.map" />
-      <option name="MAIN_CLASS_NAME" value="easy.effective.coding.collection.map.TestHashMap" />
-      <option name="METHOD_NAME" value="testKeySetOrder" />
+      <option name="PACKAGE_NAME" value="easy.effective.coding.java_basic.jvm" />
+      <option name="MAIN_CLASS_NAME" value="easy.effective.coding.java_basic.jvm.MethodCallTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestGCPrint" />
-      <item itemvalue="Application.DCSum" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.App (1)" />
-      <item itemvalue="JUnit.TestHashMap.testKeySetOrder" />
+      <item itemvalue="Application.BufferDemo" />
+      <item itemvalue="JUnit.MethodCallTest" />
+      <item itemvalue="JUnit.MethodCallTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MethodCallTest" />
+        <item itemvalue="JUnit.MethodCallTest.test" />
+        <item itemvalue="Application.BufferDemo" />
         <item itemvalue="Application.App (1)" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.DCSum" />
-        <item itemvalue="Application.TestGCPrint" />
-        <item itemvalue="JUnit.TestHashMap.testKeySetOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +374,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587563738042</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fxm">
+      <created>1646465715310</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1646465715310</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fxm">
+      <created>1647052684506</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1647052684506</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -486,6 +500,27 @@
     <MESSAGE value="更新 jvm" />
     <MESSAGE value="fxm" />
     <option name="LAST_COMMIT_MESSAGE" value="fxm" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/easy/effective/coding/java_basic/jvm/MethodCallTest.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/easy/effective/coding/java_basic/jvm/MethodCallTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/easy/effective/coding/java_basic/jvm/MethodCallTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/easy_effective_coding$ArrayListFailFast_test1.ic" NAME="ArrayListFailFast.test1 Coverage Results" MODIFIED="1585724714885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
