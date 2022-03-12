@@ -24,6 +24,7 @@ public class MyThreadPool {
         BlockingDeque queue = new LinkedBlockingDeque(2);
         ConcurrentLinkedDeque concurrentLinkedDeque=  new ConcurrentLinkedDeque(queue);
 
+
         // 线程工厂
         MyThreadFactory esFactory = new MyThreadFactory("同步es");
         MyThreadFactory hbaseFactory = new MyThreadFactory("同步hbase");
